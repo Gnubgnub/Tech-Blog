@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Ghibli">
   <title>Home | Tech Blog</title>
-  <link href="/images/favicon.ico" rel="shortcut icon">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" rel="stylesheet">
+  <link rel="stylesheet" href="../../public/css/style.css">
 </head>
 
 <body class="flex-column min-100-vh">
@@ -15,7 +15,6 @@
     <ul>
       <li class="li-inline nav-item"><a href="/">Home</a></li>
       <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
-      <!-- Conditionally render login link with UNLESS-->
       {{#unless loggedIn}}
       <li class="li-inline nav-item"><a href="/login">Login</a></li>
       {{/unless}}
@@ -37,6 +36,8 @@
 </body>
 
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 {{#if loggedIn}}
-<script src="/js/logout.js"></script>
+<script src="/02-Challenge/Develop/public/js/logout.js"></script>
 {{/if}}
